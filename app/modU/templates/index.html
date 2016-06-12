@@ -1,0 +1,24 @@
+{% block content %}
+<center>
+<h1> /u/Mod </h1>
+<hr>
+<form action='' method="post" name="submit">
+
+{{ form.hidden_tag() }}
+<p>
+Subreddit:
+<br>
+{{ form.subreddit() }}
+</p>
+
+<p>
+Comment:
+<br>
+{{ form.comment(cols="80",rows="25") }}
+</p>
+
+<p><input type="submit" value="Submit"></p>
+</form>
+
+</center>
+{% endblock %}
